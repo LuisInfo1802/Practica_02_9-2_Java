@@ -51,6 +51,21 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btnLimpiar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                txtCm.setText("");
+                txtKg.setText("");
+                txtImc.setText("");
+            }
+        });
+
+        btnCerrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
     private void CalcularImc()
     {
